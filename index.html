@@ -6,109 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Berger</title>
-    <style type="text/css">
-        * {
-            padding: 0;
-            margin: 0
-        }
-        body,
-        html {
-            width: 300px;
-            height: 250px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .show{
-            display: block !important;
-        }
-
-        #video-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            cursor: pointer;
-            background: #000;
-        }
-
-        .video-overlay {
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            /*left: 50%;*/
-            /*bottom: 0%;*/
-            /*transform: translate(-50%, 0%);*/
-            min-width: 300px;
-            height: 50px;
-            z-index: 444;
-        }
-
-        #video-container .video-overlay {
-            z-index: 999;
-            background: rgba(0, 0, 0, 0.5);
-            height: 50px;
-            width: 300px;
-            opacity: 1;
-        }
-
-        #video-container:hover .video-overlay {
-            opacity: 1;
-        }
-
-        #action {
-            display: block;
-            transform: translateX(-50%) translateY(-50%);
-            top: 50%;
-            right: 0%;
-            position: absolute;
-            opacity: 1;
-            height: 32px;
-            width: 32px;
-        }
-
-        #video-container:hover #action {
-            opacity: 1;
-        }
-
-        .readMore{
-            position: absolute;
-            width: 50%;
-            height: 46px;
-            bottom: -15px;
-            left: 30px;
-            z-index: 9999;
-        }
-        .readMore .details{
-            color: #fff;
-            font-size: 12px;
-            /*text-decoration: none;*/
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .readInfo{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            background: #000;
-        }
-
-        .slide_1 {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="video-container">
     <div class="slide_1">
-        <iframe id="ytplayer" width="300" height="250" src="https://www.youtube.com/embed/o9EkHRx-qjs?rel=0&autoplay=1&controls=0&enablejsapi=1&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="ytplayer" width="300" height="250" src="https://www.youtube.com/embed/o9EkHRx-qjs?rel=0&autoplay=0&controls=0&enablejsapi=1&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!--<iframe width="300" id="ytplayer" height="250" class="videoImageYT" src="https://www.youtube.com/embed/2_VVarpsVkQ?rel=0&autoplay=1&controls=0&enablejsapi=1&playerapiid=ytplayer" frameborder="0"  allow="autoplay; encrypted-media" allowfullscreen=""></iframe>-->
     </div>
 
